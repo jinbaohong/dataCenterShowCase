@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<title>sample</title>
+	<link rel="stylesheet" href="file:///C:/Users/K009/Desktop/d3Show/s1_2/style.css" type="text/css" />
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="file:///C:/Users/K009/Desktop/d3Show/s1_2/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#nav li ul").hide();
+			$("#nav li").hover(function () {
+				$(">ul:not(:animated)", this).slideDown("fast");
+			},function () {
+				$(">ul", this).slideUp("fast");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="logo">
+				<a href="file:///C:/Users/K009/Desktop/d3Show/s1_2/index.html">
+				<img src="file:///C:/Users/K009/Desktop/d3Show/s1_2/images/img2.jpg" height="34" width="200">
+				</a>
+			</div>
+			<ul id="header-nav">
+				<li><a href="test.html">
+					<img src="file:///C:/Users/K009/Desktop/d3Show/s1_2/images/about.png" /></a></li>
+				<li><a href="test.html">
+					<img src="file:///C:/Users/K009/Desktop/d3Show/s1_2/images/contact.png" /></a></li>
+				<li><a href="test.html">
+					<img src="file:///C:/Users/K009/Desktop/d3Show/s1_2/images/sitemap.png" /></a></li>
+			</ul>
+		</div>
+		<div id="nav">
+			<ul>
+				<li class="color-blue">
+					<a href="#">Repository</a>
+					<ul class="subs">
+						<li><a href="#">Exhibition</a>
+							<ul>
+								<li><a href="file:///C:/Users/K009/Desktop/d3Show/s1_2/repository/exhibition/sphereMap/index.html">Computex</a></li>
+								<li><a href="test.html">AMPA</a></li>
+								<li><a href="test.html">Cycle</a></li>
+							</ul>
+						</li>
+						<li><a href="test.html">GreedTrade</a></li>
+						<li><a href="test.html">TaiwanExcellence</a></li>
+					</ul>
+				</li>
+				<li class="color-red">
+					<a href="#">Service</a>
+					<ul class="subs">
+						<li><a href="test.html">DataVisualize</a></li>
+						<li><a href="#">DataAnalysis</a>
+							<ul>
+								<li><a href="test.html">descriptiveStatistics</a></li>
+								<li><a href="test.html">modeling</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="color-yellow">
+					<a href="#">Information</a>
+					<ul class="subs">
+						<li><a href="test.html">News</a></li>
+						<li><a href="test.html">Developing</a></li>
+					</ul>
+				</li>
+				<li class="color-green">
+					<a href="#">ContactMe</a>
+					<ul class="subs last">
+						<li><a href="test.html">Online</a></li>
+						<li><a href="test.html">Offline</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="contents">
+			<div id="contents-inner">
+				<h1>Exhibition</h1>
+				<p>Just in case you are going to sleep</p>
+				<p>So I made this 'ball' to make geo data visualized</p>
+				<script src="file:///C:/Users/K009/Desktop/d3Show/s1_2/repository/exhibition/sphereMap/smap.js" charset="urf-8"></script>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer-inner">Copyright © 2017 jinbao All Right Reserved.</div>
+	</div>
+</body>
+</html>
